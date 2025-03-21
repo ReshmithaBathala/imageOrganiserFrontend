@@ -1,0 +1,92 @@
+.gallery-container {
+  margin-top: 20px;
+}
+
+/* Search Input Styling */
+.search-input {
+  width: 100%;
+  max-width: 350px; /* Controls the max width */
+  padding: 12px 15px;
+  border: 2px solid #a0a0a0; /* Subtle grey border */
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  background: #f5f5f5; /* Light grey background */
+  color: #333;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder Styling */
+.search-input::placeholder {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Focus Effect */
+.search-input:focus {
+  border-color: #7289da; /* Soft blue focus */
+  background: white;
+  box-shadow: 0px 5px 12px rgba(114, 137, 218, 0.3);
+  transform: scale(1.02);
+}
+.gc {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive columns */
+  gap: 15px; /* Spacing between images */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(160, 159, 159, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 15px;
+}
+
+/* Image Styling */
+.gallery-image {
+  width: 100%; /* Ensures consistency */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Crops while maintaining aspect ratio */
+  border-radius: 10px;
+}
+
+/* Hover Effect */
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.search-container {
+  flex-grow: 1;
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.sort-dropdown {
+  margin-left: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

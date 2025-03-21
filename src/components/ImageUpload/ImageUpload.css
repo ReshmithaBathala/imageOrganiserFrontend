@@ -1,0 +1,132 @@
+/* Center the upload container */
+.upload-container {
+  /* background: linear-gradient(135deg, #22262a, #e9ecef); */
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 90%;
+  margin: 40px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  gap: 15px;
+  /* background: linear-gradient(135deg, #f8f9fa, #e9ecef); */
+  border-radius: 12px;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+}
+
+/* Each child inside .ip */
+.ip > * {
+  flex: 1; /* Equal space for all elements */
+  text-align: center;
+}
+
+/* Styling the file input */
+.file-input {
+  display: none; /* Hide default input */
+}
+
+.custom-file-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b8babb;
+  color: #0a0909;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  height: 33px;
+  border-color: #595a5b;
+  border-style: dashed;
+}
+
+.custom-file-label:hover {
+  background: #8e9399;
+  transform: scale(1.05);
+}
+
+/* Preview Image */
+.preview-image {
+  width: 80%;
+  max-width: 150px;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.preview-image:hover {
+  transform: scale(1.08);
+}
+
+/* Buttons */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  height: 60px;
+}
+
+.primary {
+  background: #7289da;
+  color: white;
+}
+
+.primary:hover {
+  background: #8a95be;
+  transform: scale(1.05);
+}
+
+.secondary {
+  background: #43b581;
+  color: #f1f3f5;
+}
+
+.secondary:hover {
+  background: #9fe7c6;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .upload-container {
+    padding: 20px;
+  }
+
+  .ip {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .preview-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .btn,
+  .custom-file-label {
+    width: 100%;
+  }
+}
